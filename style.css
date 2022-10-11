@@ -1,0 +1,103 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0a0c1b;
+    color: white;
+}
+.container {
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    background-color: #1c1938;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+}
+.box .left {
+    width: calc(100% - 350px);
+    padding: 60px;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+}
+.box .right {
+    width: 350px;
+    height: 100%;
+    background-image: url("./image.jpg.jfif");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+}
+.box .left h1 {
+    margin-bottom: 20px;
+    color: #feffff;
+}
+.box .left h1 span {
+    color: #a55ad1;
+}
+.box .left p {
+    margin-bottom: 20px;
+    color: #aeacc4;
+}
+.box ul {
+    display: flex;
+    flex-direction: row;
+}
+.box ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.box ul li span {
+    font-weight: bold;
+    font-size: 24px;
+}
+.box ul li label {
+    color: #9593a8;
+}
+/* media */
+@media screen and (max-width: 768px) {
+    .container {
+        height: auto;
+        justify-content: unset;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .box {
+        flex-direction: column-reverse;
+        width: 85%;
+        
+    }
+    .box .left {
+        width: 100%;
+        padding: 30px;
+        border-bottom-left-radius:15px ;
+        border-bottom-right-radius:15px ;
+
+    }
+    .box .right {
+        width: 100%;
+        height: 220px;
+        background-size: 100% auto;
+        border-top-right-radius:15px ;
+        border-top-left-radius:15px ;
+        border-bottom-right-radius:0 ;
+    }
+    .box ul {
+        flex-direction: column;
+    }
+    .box ul li {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
